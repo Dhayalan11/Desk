@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+  <form class="signup" onsubmit="return false" autocomplete="off">
+        <h1>Log In</h1>
+        <div class="signup__field">
+          <input class="signup__input" type="email" name="email" id="email" required />
+          <label class="signup__label" for="email">Email</label>
+        </div>
+      
+        <div class="signup__field">
+          <input class="signup__input" type="password" name="password" id="password" required />
+          <label class="signup__label" for="password">Password</label>
+        </div>
+        <p id="invalidAgent"></p>
+        <button onclick="logInSubmitButton()">Sign In</button>
+      </form>
+      <script src="agent.js"></script>   
+</body>
+</html>

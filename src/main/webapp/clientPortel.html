@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="clientPortel.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="loadDept()">
+    <div id="root">
+        <div id="header">
+            <div id="insideHeader1">ZYLKER</div>
+            <div id="insideHeader2">Home</div>
+            <div id="insideHeader3">My Area</div>
+            <div id="insideHeader4">Submit a ticket</div>
+            <div id="insideHeader5">Knowledge Base</div>
+            <div id="insideHeader6">Community</div>
+        </div>
+        <p id="SubmitATicket">Submit a Ticket</p>
+        <div id="divForForm">
+            <div id="input1">
+        <label id="lableForDepartmentSelectTag" for="departmentSelectTag">Departments :</label>
+        <select id="departmentSelectTag"></select>
+        </div>
+        <div id="input2">
+        <lable id="lableForName" for="name">Contact Name :</lable>
+        <input id="name" type = "text" />    
+    </div>
+    <div id="input3">
+        <lable id="lableForEmail" for="email">Email:</lable>
+        <input id="email" type = "email" />    
+    </div>
+     <div id="input6">
+        <lable id="lableForClassification" for="classification">Classification :</lable>
+       
+        <select id="classification" onchange=showPriority(this)>
+            <option value="none" selected>None</option>
+             <option value="question" >Question</option>
+              <option value="problems" >Problems</option>
+               <option value="features" >Features</option>
+        </select>
+    </div>
+        
+        <div id="input7">
+        <lable id="lableForPriority" for="priority">Priority :</lable>
+    
+        <select id="priority">
+            <option value="none" selected>None</option>
+            <option value="low" >Low</option>
+            <option value="medium" >Medium</option>
+            <option value="high" >High</option>
+        </select>
+    </div>
+        
+    <div id="input4">
+        <lable id="lableForSubject" for="subject">Subject:</lable>
+        <input id="subject" type = "text" />    
+    </div>
+
+    <div id="input5">
+        <lable id="lableForDesc" for="desc">Description:</lable>
+        <textarea id="desc"></textarea>
+        </div>
+
+
+    </div>
+    <button id="submitButtonForTheForm" onclick="SubmitForTheClientportel()">Submit</button>
+    </div>
+     <script src="visitor.js"></script>   
+   </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/4d1b74cd24.js" crossorigin="anonymous"></script>
+</head>
+<body onload="tickets()">
+    <div id="companyRoot">
+     <div id="companyHeader">
+        <div id="headerLeft">
+            <div id="companyLogo">
+                <i class="fa-solid fa-hand-holding-hand companyLogo"></i>
+            </div>
+            <div id="companyTicketName" onclick="showTickets()">
+                Tickets
+            </div>
+        </div>
+        <div id="headerRight" onclick = "logOut()">
+            Log Out
+            <i class="fa-solid fa-power-off"></i>
+        </div>
+     </div>
+     
+     <div id="companyTwo">
+        <div id="companyNavigationBar">
+           
+        </div>
+        <div id="companyContet">
+       
+       <div id="companyTicketPage">
+           <div id="companyTicketPageHeader">
+            <div id="companyTicketPageHeaderLeft">
+                <select id="selectTicket" onchange="show(this.value)">
+                    <option value="all" selected>ALL TICKET</option>
+                    <option value="open">OPEN </option>
+                    <option value="onHold">ON HOLD</option>
+                    <option value="escalated">ESCALATED</option>
+                    <option value="closed">CLOSED</option>
+                </select>
+            </div>
+           
+            </div>
+            <div id="listOfTicket">
+            </div>
+             </div>
+    <!-- Inside the ticket -->   
+    <div id="insideTheTicket">
+        <div class="insideTheTicketLeft">
+            <div class="contactInfo">
+                <div class="contactInfoLableDiv">
+                <p>CONTACT INFO</p>
+                <hr class="brLine">
+            </div>  
+            <div class="contactInfoOwnerName">
+                Dhaya
+                </div>
+                <div class="contactInfoOwnerMail">
+                    dhaya@gmail.com
+                    </div>
+            </div>
+            <div class="ticketProperties">
+
+                <div class="ticketPropertiesLableDiv">
+                    <p>TICKET PROPERTIES</p>
+                    <hr class="brLine">
+                </div>
+                <div class="ticketOwner">
+                     <p class="ticketOwnerLable">Ticket Owner</p>
+                     <p id="selectAgentForTheTicket"></p>
+                    </div>
+                    <div class="ticketStatus">
+                        <p class="ticketStatusLable">Status</p>
+                     <select class="selectStatusForTheTicket" onchange="updateStatus(this)">
+                        <option value="OPEN" selected>Open</option>
+                        <option value="ONHOLD" >On hold</option>
+                        <option value="ESCALATED" >Escalated</option>
+                        <option value="CLOSED" >Closed</option>
+                     </select>
+                        </div>
+
+                        <div class="ticketDueDate">
+                            <p class="ticketDueDateLable">Due Date</p>
+                            <input id="dueDateInputBox" type="date"/>
+                        </div>
+                </div>
+                <div class="ticketInformation">
+                    <div class="ticketInformationLableDiv">
+                        <p>TICKET INFORMATION</p>
+                        <hr class="brLine">
+                        </div>
+                        <p class="phoneNumberLable">
+                            Phone
+                        </p>
+                            <input type="text" inputmode="numeric" class="inputTagForPhoneNumber">
+                </div>
+
+                <div class="additionalInformation">
+                    <div class="additionalInformationLableDiv">
+                        <p>ADDITIONAL INFORMATION</p>
+                        <hr class="brLine">
+                        <div class="ticketPriority">
+                            <p class="ticketPriorityLable" >Priority</p>
+                            <select class="selectPriorityForTheTicket" onchange="updatePriority(this)">
+                               <option value="none" selected>None</option>
+                               <option value="low" >Low</option>
+                               <option value="medium" >Medium</option>
+                               <option value="high" >High</option>
+                            </select>
+                           </div>
+                           <div class="ticketClassification">
+                               <p class="ticketClassificationLable">Classification</p>
+                            <select class="selectClasificationForTheTicket" onchange="updateClassification(this)">
+                               <option value="none" selected>None</option>
+                                <option value="question" >Question</option>
+                                 <option value="problems" >Problems</option>
+                                  <option value="features" >Features</option>
+                            </select>
+                               </div>
+
+                        </div>  
+                </div>
+            </div>
+            <!-- End of left Side For the inside ticket -->
+            <div class="insideTheTicketRight">
+                <div class="headerForInsideRight">
+                    <div class="headerForInsideRightOne">
+                        <div class="logoMailInsideTicket">
+                            <i class="fa-regular fa-envelope" ></i>
+                            </div>
+                            <div class="ticketIdInsideTicket">
+                                #100
+                                </div>
+                            <div class="ticketNameInsideTicket">
+                                i have a problem
+                                </div>
+                                      <div id="replyBox" onclick="replyBox()">Reply</div>
+                        </div>
+                        <div class="headerForInsideRightTwo">
+                            <div class="conversationLableDiv"  onclick="showConversation()">
+                                Conversation
+                            </div>
+                            <div class="HistoryLableDiv" onclick="showHistory()">
+                                History 
+                                </div> 
+                        </div>
+                    </div>
+                    <div class="contentPageForInsideRight">
+                        <div class="conversationContent"></div>
+                        <div class="ticketContent"></div>
+                    </div>
+                    <div class="footerForInsideRight">
+                        <div class="CloseTicket" onclick="changeTheCloseTicket(this)">Close Ticket</div>
+                    </div>
+                     <div class="historyList">
+                    
+                    </div>
+            </div>
+            </div>
+    </div>
+
+    </div>
+    </div>
+    
+    <script src="agent.js"></script>   
+</body>
+</html>

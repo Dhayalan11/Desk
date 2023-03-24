@@ -1,0 +1,202 @@
+@charset "UTF-8";
+html, body {
+    height: 100%;
+    width: 100%;
+  
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Poppins", sans-serif;
+  }
+#root{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#header{
+    width: 100%;
+    height: 8%;
+    background-color: black;
+    display: flex;
+}
+#insideHeader1{
+    height: 100%;
+    width: 10%;
+    color: white;
+    /* border: 1px solid red; */
+    margin-right:20% ;
+    font-size: 130%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insideHeader2{
+    height: 100%;
+    width: 10%;
+    color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insideHeader3{
+    height: 100%;
+    width: 10%;
+    color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insideHeader4{
+    height: 100%;
+    width: 10%;
+    color:#ff2a00;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insideHeader5{
+    height: 100%;
+    width: 10%;
+    color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insideHeader6{
+    height: 100%;
+    width: 10%;
+    color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#SubmitATicket{
+    font-size: 160%;
+    color: #5b5050;
+    margin-left: 6%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+#divForForm{
+    width: 40%;
+    height: 60%;
+    /* border: 1px solid red; */
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#departmentSelectTag{
+    width: 40%;
+    height: 70%
+}
+#lableForDepartmentSelectTag{
+    font-size: 130%;
+    margin-right: 8%;
+    /* margin-left: 6%; */
+}
+#lableForName{
+    font-size: 140%;
+    margin-right: 5%;
+    /* margin-left: 6%; */
+}
+#name{
+    width: 37%;
+    height: 65%;
+}
+#input1{
+    width: 100%;
+    height: 5%;
+}
+#input2{
+    width: 100%;
+    height: 5%;
+}
+#input3{
+    width: 100%;
+    height: 5%;
+}
+#email{
+    width: 37%;
+    height: 65%;
+}
+#lableForEmail{
+    font-size: 140%;
+    margin-right: 16%;
+}
+#input4{
+    width: 100%;
+    height: 5%;
+}
+#subject{
+    width: 37%;
+    height: 65%;
+}
+#lableForSubject{
+    font-size: 140%;
+    margin-right: 14%;
+}
+#input5{
+    width: 100%;
+    height:20%;
+    display: flex;
+}
+#lableForDesc{
+    font-size: 140%;
+}
+#desc{
+    width: 35%;
+    height: 70%;
+    margin-left: 11%;
+}
+#submitButtonForTheForm{
+    width: 3%;
+    height: 2%;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    margin-left: 27%;
+}
+
+#input6{
+    width: 100%;
+    height:5%;
+    display: flex;
+}
+#lableForClassification{
+    font-size: 140%;
+}
+#classification{
+    width: 35%;
+    height: 80%;
+    margin-left: 7%;
+
+}
+#input7{
+    width: 100%;
+    height:5%;
+    display: none;   
+}
+#lableForPriority{
+    font-size:140% ;
+}
+#priority{
+    width: 35%;
+    height: 80%;
+    margin-left: 14%;
+}
+
+
+
+
+
+
+

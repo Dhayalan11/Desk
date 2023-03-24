@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>company</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="companyPageRoot">
+        <div id="companyLayoutBox">
+            <div id="companyLeftBox">
+                <img src="helpDeskPic.png" style="border-radius: 10px;" width=460 height=295 />
+            </div>
+            <div id="companyRightBox">
+                
+                    <p id="companyMailLable">Email address</p>
+                    <input type="email" id="companyMailInputBox"  placeholder="Email address"  required>
+                    <p id="companyPasswordLable">Password</p>
+                    <input type="password" id="companyPasswordInputBox" placeholder="Password" required><br/>
+                     <!-- <span><input type="checkbox" id="showPassword"></span><p>show password</p> -->
+                     <div id="showPasswordDiv">
+                        <input style="width: 2vh;" type="checkbox" id="showPassword" onclick="showPassword()">
+                        <p style="margin-left: 1vh;">  show password</p>
+                     </div>
+                     <p id="invalidCompany"></p>
+                    <button id="companySignInSubmit" onclick = "logInSubmit()">Submit</button>
+                
+                <!-- <p >Don't have an account? <a href="companySignUp.html" id="createAccount">Create an Account</a></p> -->
+            </div>
+        </div>
+    </div>
+    <script src="company.js"></script>   
+</body>
+</html>
+
+
